@@ -1,0 +1,71 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: discord.py in ./.local/lib/python3.9/site-packages (2.6.4)
+Requirement already satisfied: aiohttp<4,>=3.7.4 in ./.local/lib/python3.9/site-packages (from discord.py) (3.13.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (1.4.0)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (5.0.1)
+Requirement already satisfied: attrs>=17.3.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./.local/lib/python3.9/site-packages (from aiohttp<4,>=3.7.4->discord.py) (1.22.0)
+Requirement already satisfied: typing-extensions>=4.1.0 in ./.local/lib/python3.9/site-packages (from multidict<7.0,>=4.5->aiohttp<4,>=3.7.4->discord.py) (4.15.0)
+Requirement already satisfied: idna>=2.0 in ./.local/lib/python3.9/site-packages (from yarl<2.0,>=1.17.0->aiohttp<4,>=3.7.4->discord.py) (3.11)
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python3.9 -m pip install --upgrade pip
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: python-dotenv in ./.local/lib/python3.9/site-packages (1.2.1)
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python3.9 -m pip install --upgrade pip
+Defaulting to user installation because normal site-packages is not writeable
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Downloading charset_normalizer-3.4.4-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Requirement already satisfied: idna<4,>=2.5 in ./.local/lib/python3.9/site-packages (from requests) (3.11)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests)
+  Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+Installing collected packages: urllib3, charset_normalizer, certifi, requests
+  WARNING: The script normalizer is installed in '/home/container/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed certifi-2026.1.4 charset_normalizer-3.4.4 requests-2.32.5 urllib3-2.6.3
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python3.9 -m pip install --upgrade pip
+Defaulting to user installation because normal site-packages is not writeable
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.14.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4)
+  Downloading soupsieve-2.8.3-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: typing-extensions>=4.0.0 in ./.local/lib/python3.9/site-packages (from beautifulsoup4) (4.15.0)
+Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+Downloading soupsieve-2.8.3-py3-none-any.whl (37 kB)
+Installing collected packages: soupsieve, beautifulsoup4
+
+Successfully installed beautifulsoup4-4.14.3 soupsieve-2.8.3
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python3.9 -m pip install --upgrade pip
+Traceback (most recent call last):
+  File "/home/container/main.py", line 60, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/home/container/main.py", line 57, in main
+    await bot.start(os.getenv("TOKEN"))
+  File "/home/container/.local/lib/python3.9/site-packages/discord/client.py", line 846, in start
+    await self.login(token)
+  File "/home/container/.local/lib/python3.9/site-packages/discord/client.py", line 672, in login
+    raise TypeError(f'expected token to be a str, received {token.__class__.__name__} instead')
+TypeError: expected token to be a str, received NoneType instead

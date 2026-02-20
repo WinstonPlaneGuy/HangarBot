@@ -1,0 +1,25 @@
+{
+  "Mikoyan MiG-29SMT": {
+    "images": ["images/mig29smt-1.jpg","images/mig29smt-2.jpg"],
+    "aliases": ["mig29smt", "fulcrum smt", "mikoyan mig-29smt", "mig-29smt"]
+  },
+  "Grumman F-14D": {
+    "images": ["images/f14d-1.jpg", "images/f14d-2.jpg"],
+    "aliases": ["tomcat d", "super tomcat", "f-14d", "f14d"]
+ },
+  "Sukhoi Su-57": {
+    "images": ["images/su57-1.jpg","images/su57-2"],
+    "aliases": ["sukhoi su-57", "su-57", "su 57", "su57",
+                "t-50", "pak fa", "pakfa", "sukhoi felon"]
+  },
+  "Sukhoi Su-47": {
+    "images": ["images/su47-1.jpg", "images/su47-2.jpg"],
+    "aliases": ["Sukhoi Su-47", "su-47", "Su 47","sukhoi berkut", "berkut","s-37","s37"]
+  },
+  "Sukhoi Su-33": {
+    "images": ["images/su33-1.jpg", "images/su33-2.jpg", "images/su33-3.jpg"],
+    "aliases": ["Sukhoi Su-33", "naval flanker",
+                "su-33", "su33", "Su 33", "Flanker D", "flankerd", "d flanker",
+                "su-27k", "su 27k", "sukhoi su-27k", "sukhoi su 27k", "navy flanker"]
+  }
+}

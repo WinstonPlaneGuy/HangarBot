@@ -88,18 +88,44 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
+# Heart responder
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    content = message.content.lower()
+
+    if "thank you hangarbot" in content or "thanks hangarbot" in content:
+        try:
+            await message.add_reaction("❤️")
+        except Exception as e:
+            print(f"Failed to react to message: {e}")
+
+    await bot.process_commands(message)
+
 # Wiki Search Command
 
 from wikiextractor import get_aircraft_specs
 
-@bot.tree.command(name="search", description="Fetch aircraft specs from Wikipedia")
-@app_commands.describe(name="Aircraft name (e.g. Tu-28)")
-async def aircraft(interaction: discord.Interaction, name: str):
+@bot.tree.command(name="search", description="Search aircraft specs from Wikipedia")
+@app_commands.describe(
+    name="Name of the aircraft (e.g., Tu-28)",
+    category="Which category to display"
+)
+@app_commands.choices(
+    category=[
+        app_commands.Choice(name="General Characteristics", value="general characteristics"),
+        app_commands.Choice(name="Performance", value="performance"),
+        app_commands.Choice(name="Armament", value="armament"),
+        app_commands.Choice(name="Avionics", value="avionics")
+    ]
+)
+async def search(interaction: discord.Interaction, name: str, category: app_commands.Choice[str]):
 
-    await interaction.response.defer()
+    await interaction.response.defer()  # prevent timeout for scraper
 
     loop = asyncio.get_running_loop()
-
     try:
         specs = await loop.run_in_executor(None, get_aircraft_specs, name)
     except Exception as e:
@@ -107,22 +133,19 @@ async def aircraft(interaction: discord.Interaction, name: str):
         print(e)
         return
 
+    # Only send the selected category
     output = f"=== {specs['title']} ===\n\n"
+    selected_items = specs.get(category.value, [])
 
-    for category, items in specs.items():
-        if category == "title":
-            continue
+    output += f"--- {category.value.title()} ---\n"
 
-        output += f"--- {category.title()} ---\n"
+    if selected_items:
+        for item in selected_items:
+            output += f"- {item}\n"
+    else:
+        output += "No data available\n"
 
-        if items:
-            for item in items:
-                output += f"- {item}\n"
-        else:
-            output += "No data available\n"
-
-        output += "\n"
-
+    # Discord limit safety
     await interaction.followup.send(output[:2000])
 
 bot.run(TOKEN, log_handler=handler, log_level=logging.DEBUG)

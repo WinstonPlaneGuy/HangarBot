@@ -49,18 +49,15 @@ async def on_ready():
     activity = discord.Activity(type=discord.ActivityType.watching, name=f"Planespotting")
     await bot.change_presence(status=discord.Status.online, activity=activity)
 
-# Aircraft responder
+# Responder script
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
         return
 
-    if bot.user.mentioned_in(message):
-        await message.channel.send(f"Oh shit I got pinged!")
-        return
-
     content = message.content.lower()
 
+    # aircraft responder
     for keyword, aircraft_name in lookup.items():
         if re.search(rf"\b{re.escape(keyword)}\b", content):
 
@@ -86,11 +83,7 @@ async def on_message(message):
             await message.channel.send(embed=embed, file=file)
             break
 
-    await bot.process_commands(message)
-
-# Heart responder
-@bot.event
-async def on_message(message):
+    # heart responder
     if message.author == bot.user:
         return
 
@@ -101,6 +94,11 @@ async def on_message(message):
             await message.add_reaction("❤️")
         except Exception as e:
             print(f"Failed to react to message: {e}")
+
+    # plaen responder
+    if bot.user.mentioned_in(message):
+        await message.channel.send(f"plaen")
+        return
 
     await bot.process_commands(message)
 

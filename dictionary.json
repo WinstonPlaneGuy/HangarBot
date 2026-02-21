@@ -34,15 +34,15 @@
     "images": ["images/j10-1.jpg", "images/j10-2.jpg", "images/j10-3.jpg"],
     "aliases": ["Chengdu J-10", "J-10", "j10", "j 10", "Menglong", "vigorous dragon", "firebird"]
   },
-  "McDonnell Douglas F/A-18 Hornet": {
-    "images": ["images/f18-1.jpg", "images/f18-2.jpg", "images/f18-3.jpg"],
-    "aliases": ["mcdonnell douglas f-18 hornet", "hornet", "f-18", "f 18", "f/a-18", "fa-18", "fa 18",
-                "mcdonnell douglas f/a-18 hornet"]
-  },
   "Boeing F/A-18E/F Super Hornet": {
     "images": ["images/f18super-1.jpg", "images/f18super-2.jpg", "images/f18super-3.jpg"],
     "aliases": ["boeing f-18", "f18e", "f18f", "f-18e", "f18f", "f 18e", "f 18f", "super hornet", "f18 super hornet",
                 "boeing f/a-18e/f"]
+  },
+  "McDonnell Douglas F/A-18 Hornet": {
+    "images": ["images/f18-1.jpg", "images/f18-2.jpg", "images/f18-3.jpg"],
+    "aliases": ["mcdonnell douglas f-18 hornet", "hornet", "f-18", "f 18", "f/a-18", "fa-18", "fa 18",
+                "mcdonnell douglas f/a-18 hornet"]
   },
   "Sukhoi Su-17": {
     "images": ["images/su17-1.jpg", "images/su17-2.jpg", "images/su17-3.jpg"],

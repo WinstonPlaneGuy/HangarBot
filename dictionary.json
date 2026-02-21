@@ -60,4 +60,5 @@
   "Sukhoi Su-27": {
     "images": ["images/su27-1.jpg", "images/su27-2.jpg", "images/su27-3.jpg"],
     "aliases": ["Sukhoi Su-27", "Su-27", "su27", "su 27", "flanker", "Sukhoi flanker"]
+  }
 }

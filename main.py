@@ -31,7 +31,7 @@ lookup = {}
 
 #track last response time per aircraft
 last_response_time ={}
-COOLDOWN_SECONDS = 10
+COOLDOWN_SECONDS = 30
 
 for name, data in aircraft_data.items():
     lookup[name.lower()] = name

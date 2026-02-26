@@ -1,64 +1,322 @@
 {
   "Mikoyan MiG-29SMT": {
-    "images": ["images/mig29smt-1.jpg","images/mig29smt-2.jpg"],
-    "aliases": ["mig29smt", "fulcrum smt", "mikoyan mig-29smt", "mig-29smt"]
+    "images": [
+      "images/mig29smt-1.jpg",
+      "images/mig29smt-2.jpg"
+    ],
+    "aliases": [
+      "mig29smt",
+      "fulcrum smt",
+      "mikoyan mig-29smt",
+      "mig-29smt"
+    ]
+  },
+  "Mikoyan-Gurevich MiG-29": {
+    "images": [
+      "images/mig29-1.jpg",
+      "images/mig29-2.jpg",
+      "images/mig29-3.jpg"
+    ],
+    "aliases": [
+      "mikoyan mig-29",
+      "mig-29",
+      "mig 29",
+      "fulcrum",
+      "mig29",
+      "mikoyan-gurevich mig-29"
+    ]
   },
   "Grumman F-14D Tomcat": {
-    "images": ["images/f14d-1.jpg", "images/f14d-2.jpg"],
-    "aliases": ["tomcat d", "super tomcat", "f-14d", "f14d", "grumman f-14d"]
+    "images": [
+      "images/f14d-1.jpg",
+      "images/f14d-2.jpg"
+    ],
+    "aliases": [
+      "tomcat d",
+      "super tomcat",
+      "f-14d",
+      "f14d",
+      "grumman f-14d"
+    ]
   },
   "Grumman F-14 Tomcat": {
-    "images": ["images/f14-1.jpg", "images/f14-2.jpg", "images/f14-3", "images/f14-4"],
-    "aliases": ["tomcat", "f-14", "f14", "grumman f-14"]
- },
+    "images": [
+      "images/f14-1.jpg",
+      "images/f14-2.jpg",
+      "images/f14-3",
+      "images/f14-4"
+    ],
+    "aliases": [
+      "tomcat",
+      "f-14",
+      "f14",
+      "grumman f-14"
+    ]
+  },
   "Sukhoi Su-57": {
-    "images": ["images/su57-1.jpg","images/su57-2"],
-    "aliases": ["sukhoi su-57", "su-57", "su 57", "su57",
-                "t-50", "pak fa", "pakfa", "sukhoi felon"]
+    "images": [
+      "images/su57-1.jpg",
+      "images/su57-2"
+    ],
+    "aliases": [
+      "sukhoi su-57",
+      "su-57",
+      "su 57",
+      "su57",
+      "t-50",
+      "pak fa",
+      "pakfa",
+      "sukhoi felon"
+    ]
   },
   "Sukhoi Su-47": {
-    "images": ["images/su47-1.jpg", "images/su47-2.jpg"],
-    "aliases": ["Sukhoi Su-47", "su-47", "Su 47","sukhoi berkut", "berkut","s-37","s37"]
+    "images": [
+      "images/su47-1.jpg",
+      "images/su47-2.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-47",
+      "su-47",
+      "Su 47",
+      "sukhoi berkut",
+      "berkut",
+      "s-37",
+      "s37"
+    ]
+  },
+  "Shenyang J-15T": {
+    "images": [
+      "images/j15t-1.jpg",
+      "images/j15t-2.jpg",
+      "images/j15t-3.jpg"
+    ],
+    "aliases": [
+      "Shenyang J-15T",
+      "Flying Shark T",
+      "Feisha T",
+      "J-15T",
+      "j15t",
+      "j 15t"
+    ]
+  },
+  "Shenyang J-15": {
+    "images": [
+      "images/j15-1.jpg",
+      "images/j15-2.jpg"
+    ],
+    "aliases": [
+      "Shenyang J-15",
+      "Flying Shark",
+      "Feisha",
+      "J-15",
+      "j15",
+      "j 15",
+      "Chinese su-33",
+      "Chinese naval flanker",
+      "k flanker",
+      "flanker k",
+      "flankerk"
+    ]
   },
   "Sukhoi Su-33": {
-    "images": ["images/su33-1.jpg", "images/su33-2.jpg", "images/su33-3.jpg"],
-    "aliases": ["Sukhoi Su-33", "naval flanker",
-                "su-33", "su33", "Su 33", "Flanker D", "flankerd", "d flanker",
-                "su-27k", "su 27k", "sukhoi su-27k", "sukhoi su 27k", "navy flanker"]
-  },
-  "Chengdu J-10C": {
-    "images": ["images/j10c-1.jpg", "images/j10c-2.jpg", "images/j10c-2.jpg"],
-    "aliases": ["Chengdu J-10C", "J-10C", "j10c", "j 10c", "Menglong C", "vigorous dragon c", "firebird c"]
-  },
-  "Chengdu J-10": {
-    "images": ["images/j10-1.jpg", "images/j10-2.jpg", "images/j10-3.jpg"],
-    "aliases": ["Chengdu J-10", "J-10", "j10", "j 10", "Menglong", "vigorous dragon", "firebird"]
-  },
-  "Boeing F/A-18E/F Super Hornet": {
-    "images": ["images/f18super-1.jpg", "images/f18super-2.jpg", "images/f18super-3.jpg"],
-    "aliases": ["boeing f-18", "f18e", "f18f", "f-18e", "f18f", "f 18e", "f 18f", "super hornet", "f18 super hornet",
-                "boeing f/a-18e/f"]
-  },
-  "McDonnell Douglas F/A-18 Hornet": {
-    "images": ["images/f18-1.jpg", "images/f18-2.jpg", "images/f18-3.jpg"],
-    "aliases": ["mcdonnell douglas f-18 hornet", "hornet", "f-18", "f 18", "f/a-18", "fa-18", "fa 18",
-                "mcdonnell douglas f/a-18 hornet"]
-  },
-  "Sukhoi Su-17": {
-    "images": ["images/su17-1.jpg", "images/su17-2.jpg", "images/su17-3.jpg"],
-    "aliases": ["Sukhoi Su-17", "su-17", "su17", "su 17", "sukhoi fitter", "fitter","izdeliye s-32", "izdeliye s32"]
-  },
-  "Sukhoi Su-22": {
-    "images": ["images/su22-1.jpg", "images/su22-2.jpg", "images/su22-3.jpg"],
-    "aliases": ["Sukhoi Su-22", "su-22", "su22", "su 22"]
+    "images": [
+      "images/su33-1.jpg",
+      "images/su33-2.jpg",
+      "images/su33-3.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-33",
+      "naval flanker",
+      "su-33",
+      "su33",
+      "Su 33",
+      "Flanker D",
+      "flankerd",
+      "d flanker",
+      "su-27k",
+      "su 27k",
+      "sukhoi su-27k",
+      "sukhoi su 27k",
+      "navy flanker"
+    ]
   },
   "Sukhoi Su-35": {
-    "images": ["images/su35-1.jpg", "images/su35-2.jpg", "images/su35-3.jpg"],
-    "aliases": ["Sukhoi Su-35", "Su-35", "su35", "su 35", "super flanker", "Sukhoi super flanker", "su-27m",
-                "su 27m", "su27m"]
+    "images": [
+      "images/su35-1.jpg",
+      "images/su35-2.jpg",
+      "images/su35-3.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-35",
+      "Su-35",
+      "su35",
+      "su 35",
+      "super flanker",
+      "Sukhoi super flanker",
+      "su-27m",
+      "su 27m",
+      "su27m"
+    ]
   },
   "Sukhoi Su-27": {
-    "images": ["images/su27-1.jpg", "images/su27-2.jpg", "images/su27-3.jpg"],
-    "aliases": ["Sukhoi Su-27", "Su-27", "su27", "su 27", "flanker", "Sukhoi flanker"]
+    "images": [
+      "images/su27-1.jpg",
+      "images/su27-2.jpg",
+      "images/su27-3.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-27",
+      "Su-27",
+      "su27",
+      "su 27",
+      "flanker",
+      "Sukhoi flanker"
+    ]
+  },
+  "Chengdu J-10C": {
+    "images": [
+      "images/j10c-1.jpg",
+      "images/j10c-2.jpg",
+      "images/j10c-2.jpg"
+    ],
+    "aliases": [
+      "Chengdu J-10C",
+      "J-10C",
+      "j10c",
+      "j 10c",
+      "Menglong C",
+      "vigorous dragon c",
+      "firebird c"
+    ]
+  },
+  "Chengdu J-10": {
+    "images": [
+      "images/j10-1.jpg",
+      "images/j10-2.jpg",
+      "images/j10-3.jpg"
+    ],
+    "aliases": [
+      "Chengdu J-10",
+      "J-10",
+      "j10",
+      "j 10",
+      "Menglong",
+      "vigorous dragon",
+      "firebird"
+    ]
+  },
+  "Boeing F/A-18E/F Super Hornet": {
+    "images": [
+      "images/f18super-1.jpg",
+      "images/f18super-2.jpg",
+      "images/f18super-3.jpg"
+    ],
+    "aliases": [
+      "boeing f-18",
+      "f18e",
+      "f18f",
+      "f-18e",
+      "f18f",
+      "f 18e",
+      "f 18f",
+      "super hornet",
+      "f18 super hornet",
+      "boeing f/a-18e/f"
+    ]
+  },
+  "McDonnell Douglas F/A-18 Hornet": {
+    "images": [
+      "images/f18-1.jpg",
+      "images/f18-2.jpg",
+      "images/f18-3.jpg"
+    ],
+    "aliases": [
+      "mcdonnell douglas f-18 hornet",
+      "hornet",
+      "f-18",
+      "f 18",
+      "f/a-18",
+      "fa-18",
+      "fa 18",
+      "mcdonnell douglas f/a-18 hornet"
+    ]
+  },
+  "Sukhoi Su-17": {
+    "images": [
+      "images/su17-1.jpg",
+      "images/su17-2.jpg",
+      "images/su17-3.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-17",
+      "su-17",
+      "su17",
+      "su 17",
+      "sukhoi fitter",
+      "fitter",
+      "izdeliye s-32",
+      "izdeliye s32"
+    ]
+  },
+  "Sukhoi Su-22": {
+    "images": [
+      "images/su22-1.jpg",
+      "images/su22-2.jpg",
+      "images/su22-3.jpg"
+    ],
+    "aliases": [
+      "Sukhoi Su-22",
+      "su-22",
+      "su22",
+      "su 22"
+    ]
+  },
+  "Mikoyan-Gurevich MiG-21": {
+    "images": [
+      "images/mig21-1.jpg",
+      "images/mig21-2.jpg",
+      "images/mig21-3.jpg"
+    ],
+    "aliases": [
+      "mikoyan-gurevich mig-21",
+      "mig-21",
+      "mig 21",
+      "mig21",
+      "fishbed"
+    ]
+  },
+  "CAC/PAC JF-17 Thunder": {
+    "images": [
+      "images/jf17-1.jpg",
+      "images/jf17-2.jpg",
+      "images/jf17-3.jpg"
+    ],
+    "aliases": [
+      "CAC/PAC JF-17 Thunder",
+      "jf-17",
+      "jf 17",
+      "jf17",
+      "thunder",
+      "fc-1",
+      "xiaolong",
+      "fc 1",
+      "fc1"
+    ]
+  },
+  "General Dynamics F-16 Fighting Falcon": {
+    "images": [
+      "images/f16-1.jpg",
+      "images/f16-2.jpg",
+      "images/f16-3.jpg"
+    ],
+    "aliases": [
+      "General Dynamics F-16 Fighting Falcon",
+      "Fighting falcon",
+      "f-16",
+      "f16",
+      "f 16",
+      "Lockheed MArtin F-16",
+      "viper"
+    ]
   }
 }
